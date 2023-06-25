@@ -1,0 +1,683 @@
+@font-face {
+  font-family: "Brutal";
+  src: url(../font/Brutal-Medium.woff2);
+}
+
+@font-face {
+  font-family: "Brutal Regular";
+  src: url(../font/Brutal-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Brutal Light";
+  src: url(../font/Brutal-Light.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  padding: 32px;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.93);
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.login-section {
+  width: 470px;
+  padding: 60px;
+  background-color: #202020;
+  color: #fff;
+  font-family: "Brutal", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  position: relative;
+}
+
+.login-section .logo {
+  width: 44px;
+  color: white;
+  margin: 0 auto 50px;
+}
+
+.login-section .title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Brutal", sans-serif;
+}
+
+.login-section .title-2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Brutal Light";
+  font-size: 1.375rem;
+  font-weight: 200;
+  line-height: 1.5rem;
+  letter-spacing: normal;
+}
+
+.login-section .dont-msg {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: normal;
+  font-family: "Brutal Regular";
+  color: #ffffffb8;
+  margin-bottom: 7px;
+}
+
+.login-section .dont-msg a {
+  font-family: "Brutal Regular";
+  text-decoration: underline;
+  color: #fff;
+  letter-spacing: normal;
+}
+
+.login-section .link {
+  font-family: "Brutal Regular";
+  text-decoration: underline;
+  color: #fff;
+  letter-spacing: normal;
+}
+
+.login-section .accounts-list {
+  margin: 20px auto;
+}
+
+.login-section .accounts-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.login-section .accounts-list .item {
+  min-height: 50px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #2b2b2b;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 85px auto;
+      grid-template-columns: 85px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.login-section .accounts-list .item:hover {
+  background-color: #363636;
+}
+
+.login-section .accounts-list .item .account-logo {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #353535;
+}
+
+.login-section .accounts-list .item .account-logo .icon {
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.login-section .accounts-list .item .text {
+  padding: 10px;
+  font-weight: 500;
+}
+
+.bg_fc {
+  background-color: #1877f2 !important;
+}
+
+.bg_ps {
+  background-color: #0063c5 !important;
+}
+
+.bg_st {
+  background-color: #145c8f !important;
+}
+
+.bg_wh {
+  background-color: #fff !important;
+}
+
+.bg_rd {
+  background-color: #e90000 !important;
+}
+
+.bg_gr {
+  background-color: #027d00 !important;
+}
+
+.form {
+  margin: 20px auto 35px;
+}
+
+.field-number {
+  width: 100%;
+  margin-bottom: 3px;
+  -webkit-transition: 200ms cubic-bezier(0, 0, 0.2, 1);
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 45px;
+}
+
+.field-number .content {
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.field-number input {
+  padding: 5px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  -webkit-transition: 200ms cubic-bezier(0, 0, 0.2, 1);
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1);
+  position: relative;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+}
+
+.field {
+  width: 100%;
+  margin-bottom: 3px;
+  -webkit-transition: 200ms cubic-bezier(0, 0, 0.2, 1);
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.field label {
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  font-family: "Brutal Regular";
+  margin-bottom: 3px;
+  position: absolute;
+  font-size: 0.875rem;
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 200ms cubic-bezier(0, 0, 0.2, 1);
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1);
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.field label span {
+  color: #FFA640;
+}
+
+.field label .s {
+  color: #FFA640;
+  margin-left: 8px;
+}
+
+.field input {
+  height: 25px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  -webkit-transition: 200ms cubic-bezier(0, 0, 0.2, 1);
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1);
+  position: relative;
+  z-index: 5;
+  padding: 26px 20px 5px;
+  height: 100%;
+}
+
+.field .content {
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.field span {
+  font-size: 12px;
+  color: #DE3341;
+  font-family: "Brutal Regular";
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  opacity: 0;
+  -webkit-transition: 200ms cubic-bezier(0, 0, 0.2, 1);
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.field .not_fill {
+  border-color: #DE3341 !important;
+}
+
+.field .not_fill label {
+  top: 50% !important;
+  font-size: 0.875rem !important;
+}
+
+.field .not_fill ~ span {
+  opacity: 1;
+}
+
+.field .not_complete {
+  border-color: #DE3341 !important;
+}
+
+.field .not_complete label {
+  top: 15px !important;
+  font-size: 14px !important;
+}
+
+.field .not_complete ~ span {
+  opacity: 1;
+}
+
+.field .not_complete_2 {
+  border-color: #DE3341 !important;
+}
+
+.field .not_complete_2 label {
+  top: 50% !important;
+  font-size: 14px !important;
+}
+
+.field .not_complete_2 ~ span {
+  opacity: 1;
+}
+
+.field .filled label {
+  top: 15px !important;
+  font-size: 13px !important;
+}
+
+.field .focused {
+  border-color: #fff !important;
+}
+
+.field .focused label {
+  top: 15px !important;
+  font-size: 13px !important;
+}
+
+.field .focused ~ span {
+  opacity: 0;
+}
+
+.eye {
+  width: 24px;
+  fill: #fff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-38%);
+          transform: translateY(-38%);
+  right: 6px;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.eye svg {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.eye .open {
+  display: none;
+}
+
+.eye.active .close {
+  display: none;
+}
+
+.eye.active .open {
+  display: block;
+}
+
+.field-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  color: #ffffffb8;
+  font-weight: 500;
+  margin-bottom: 30px;
+  font-family: "Brutal Regular";
+  cursor: pointer;
+}
+
+.field-checkbox input {
+  width: 100%;
+  height: 100%;
+}
+
+.field-checkbox .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.field-checkbox .pp {
+  width: 34px;
+  height: 34px;
+  -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-right: 9px;
+}
+
+.field-checkbox .pp:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.field-checkbox svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -0.3px;
+  fill: #202020;
+  color: transparent;
+  stroke: rgba(255, 255, 255, 0.72);
+  width: 24px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.field-checkbox .checked svg {
+  fill: #0074E4;
+  stroke: rgba(0, 0, 0, 0.93);
+  color: #fff;
+}
+
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.submit-btn {
+  all: unset;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  background-color: #0074E4;
+  padding: 5px 20px;
+  font-size: 0.75rem;
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: Brutal, sans-serif;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.submit-btn:hover {
+  background-color: #288ae8;
+}
+
+.second-btn {
+  all: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  background-color: #3A3A3A;
+  padding: 5px 20px;
+  font-size: 0.75rem;
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: Brutal, sans-serif;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.second-btn:hover {
+  background-color: #595959;
+}
+
+.divider {
+  height: 0.8px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.sends {
+  margin-bottom: 20px;
+}
+
+.send-btn {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px auto;
+      grid-template-columns: 40px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 11px;
+  font-size: 14px;
+  font-family: "Brutal Regular";
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0.2px;
+  color: #ffffffb8;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  border-radius: 4px;
+  padding: 10px 11px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.send-btn .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.send-btn svg {
+  color: #fff;
+}
+
+.error-logo {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.title-3 {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Brutal Regular";
+  color: #fff;
+  text-align: center;
+}
+
+.error-msg {
+  height: 60px;
+  padding: 5px 25px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  background-color: #D54841;
+  line-height: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Brutal Regular";
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 470px) {
+  .login-section {
+    padding: 55px 45px;
+    width: 100%;
+    min-height: 100vh;
+  }
+  main {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .login-section {
+    padding: 55px 23px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
